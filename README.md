@@ -87,3 +87,51 @@ if uploaded_file:
   },
   "jurisdiction": "Switzerland"
 }
+
+## 🧠 Conceptual Overview
+
+**Boardroom Agent** is a **LangGraph-powered multi-agent system** that simulates how a CFO would think, plan, and communicate. It’s designed to:
+
+- Run financial scenarios (SaaS + tokenized assets)  
+- Generate board-level summaries using AI  
+- Flag compliance risks based on jurisdiction  
+- Mentor junior analysts with coaching-style insights
+
+This isn’t just a dashboard — it’s a **thinking tool** that blends finance, AI, and leadership.
+
+---
+
+## ⚙️ How It Works (Step-by-Step)
+
+### 1. **User Uploads Financial Data**
+- You upload a JSON file with key metrics like ARR, churn, CAC, burn rate, token price, and treasury allocation.
+
+### 2. **LangGraph Agent Flow Activates**
+Each agent performs a specific role:
+
+| Agent | What It Does |
+|-------|--------------|
+| `DataIngestorAgent` | Parses and validates the uploaded data |
+| `ScenarioPlannerAgent` | Runs Python-based financial models (e.g., runway, ARR forecast) |
+| `NarrativeGeneratorAgent` | Uses Gemini API to write a board summary |
+| `ComplianceCheckerAgent` | Flags risks based on jurisdiction and treasury mix |
+| `MentorshipAgent` | Explains the scenario in coaching tone for junior analysts |
+
+### 3. **Streamlit Front-End Displays Results**
+- You see:
+  - 📈 Scenario metrics (runway, forecasts, risks)  
+  - 🧠 Board summary (AI-generated)  
+  - 🛡️ Compliance alerts  
+  - 👨‍🏫 Mentorship insights
+
+---
+
+## 💡 Strategic Impact
+
+This project shows recruiters and companies that you:
+- Think like a CFO  
+- Build tools that simulate executive decision-making  
+- Understand both SaaS and tokenized finance  
+- Can mentor others through AI-powered interfaces  
+- Know how to integrate LangGraph, Gemini, Python, and Streamlit
+
